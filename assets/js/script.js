@@ -115,7 +115,7 @@ var taskButtonHandler = function(event) {
   // get target element from event
   var targetEl = event.target;
 
-  if (targetEl.matches(".edit-btn")) {
+  if (targetEl.(".edit-btn")) {
     console.log("edit", targetEl);
     var taskId = targetEl.getAttribute("data-task-id");
     editTask(taskId);
